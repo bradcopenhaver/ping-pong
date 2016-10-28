@@ -23,18 +23,21 @@ var createList = function(inputLimit, inputPing, inputPong) {
 
 //Clear ping and pong multiples.
   for (var i=inputPing; i<numberArray.length; i+=inputPing){
-    numberArray[i] = " ";
+    numberArray[i] = "";
   }
   for (var i = inputPong; i<numberArray.length; i+=inputPong){
-    numberArray[i] = " ";
+    numberArray[i] = "";
   }
 
 //Populate pings and pongs.
   for (var i=inputPing; i<numberArray.length; i+=inputPing){
-    numberArray[i] = "ping";
+    numberArray[i] += "ping";
+  }
+  for (var i=inputPong; i<numberArray.length; i+=inputPong){
+    numberArray[i] += "pong";
   }
 
-
+//Remove zero and return string.
   numberArray.shift();
   return numberArray.join(", ");
 }
