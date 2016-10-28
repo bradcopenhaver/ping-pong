@@ -19,7 +19,7 @@ _Program specifications:_
  * Output: [1, 2, "ping", "pong", 5, "ping", 7]
 * 4 Any number in the list divisible by both inputs will be replaced with "ping pong".
  * Input: 8, 2, 3
- * Output: [1, "ping", "pong", "ping", 5, "ping pong", 7, "ping"]
+ * Output: [1, "ping", "pong", "ping", 5, "pingpong", 7, "ping"]
 * 5 The final list of words and numbers is displayed to the user.
  * Input: 8, 2, 3
  * Output: 1, ping, pong, ping, 5, ping pong, 7, ping

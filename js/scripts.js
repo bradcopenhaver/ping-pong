@@ -16,9 +16,25 @@ $(document).ready(function(){
 var createList = function(inputLimit, inputPing, inputPong) {
   var numberArray = [];
 
-  for (var i=1; i<inputLimit+1; i++) {
+//Populate the array.
+  for (var i=0; i<inputLimit+1; i++) {
     numberArray.push(i);
   }
 
+//Clear ping and pong multiples.
+  for (var i=inputPing; i<numberArray.length; i+=inputPing){
+    numberArray[i] = " ";
+  }
+  for (var i = inputPong; i<numberArray.length; i+=inputPong){
+    numberArray[i] = " ";
+  }
+
+//Populate pings and pongs.
+  for (var i=inputPing; i<numberArray.length; i+=inputPing){
+    numberArray[i] = "ping";
+  }
+
+
+  numberArray.shift();
   return numberArray.join(", ");
 }
