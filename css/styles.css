@@ -1,8 +1,10 @@
 .container-fluid {
   background: linear-gradient(to bottom, #a4dbb4, white);
-
 }
 #output {
+  display: none;
+}
+#cats {
   display: none;
 }
 #heading {
