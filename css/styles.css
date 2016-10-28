@@ -1,6 +1,15 @@
 .container-fluid {
   background: linear-gradient(to bottom, #a4dbb4, white);
 }
+#output textarea {
+  height: 350px;
+  width: 100%;
+  border-radius: 5px;
+  border-color: #555555;
+  background: none;
+  resize: none;
+  color: #555555;
+}
 #output {
   display: none;
 }
