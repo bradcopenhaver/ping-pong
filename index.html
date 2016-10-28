@@ -10,7 +10,33 @@
   </head>
   <body>
     <div class="container">
+      <div class="row" id="heading">
+        <div class="col-md-12">
 
+        </div>
+      </div><!--row heading-->
+      <div class="row">
+        <form>
+          <div class="col-md-4" id="input">
+            <div class="form-group">
+              <label for="inputLimit">Enter upper limit here:</label>
+              <input id="inputLimit" type="number">
+            </div>
+            <div class="form-group">
+              <label for="inputPing">Numbers divisible by this number will be replaced with "ping":</label>
+              <input id="inputPing" type="number">
+            </div>
+            <div class="form-group">
+              <label for="inputPong">Numbers divisible by this number will be replaced with "pong":</label>
+              <input id="inputPong" type="number">
+            </div>
+            <button type="submit">Ping it!</button>
+          </div>
+        </form>
+        <div class="col-md-8" id="output">
+          <p id="outputList"></p>
+        </div>
+      </div><!--row-->
     </div>
   </body>
 </html>
