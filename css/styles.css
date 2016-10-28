@@ -2,13 +2,32 @@
   background: linear-gradient(to bottom, #a4dbb4, white);
 }
 #output textarea {
-  height: 350px;
+  height: 400px;
   width: 100%;
   border-radius: 5px;
   border-color: #555555;
   background: none;
   resize: none;
   color: #555555;
+}
+#heading {
+  text-align: center;
+}
+#heading .panel {
+  margin: 10px 0px;
+  background: none;
+  height: 80px;
+  border: solid thin #555555;
+}
+#input .panel {
+  padding: 10px;
+  background-color: #71bc86;
+}
+#output p {
+  font-size: 12pt;
+}
+#pregame img {
+  width: 100%;
 }
 #output {
   display: none;
@@ -21,20 +40,4 @@
 }
 #birthday {
   display: none;
-}
-#heading {
-  text-align: center;
-}
-#heading {
-  height: 100px;
-}
-#input .panel {
-  padding: 10px;
-  background-color: #71bc86;
-}
-#output p {
-  font-size: 12pt;
-}
-#pregame img {
-  width: 100%;
 }
