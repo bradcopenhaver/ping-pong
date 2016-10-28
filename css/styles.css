@@ -1,8 +1,15 @@
+.container-fluid {
+  background: linear-gradient(to bottom, #a4dbb4, white);
+
+}
 #output {
   display: none;
 }
-.jumbotron {
+#heading {
   text-align: center;
+}
+#heading img {
+  height: 100px;
 }
 #input .panel {
   padding: 10px;
@@ -10,4 +17,7 @@
 }
 #output p {
   font-size: 12pt;
+}
+#pregame img {
+  width: 100%;
 }

@@ -6,13 +6,22 @@ $(document).ready(function(){
     var inputPing = parseInt($("#inputPing").val());
     var inputPong = parseInt($("#inputPong").val());
 
-    var outputList = createList(inputLimit, inputPing, inputPong);
+    var outputString = createList(inputLimit, inputPing, inputPong);
 
-    $("#outputList").text(outputList);
+    $("#outputList").text(outputString);
+    $("#pregame").hide();
     $("#output").show();
   });
 });
 var createList = function(inputLimit, inputPing, inputPong) {
+//Input validation
+if (inputLimit === 0){
+  return "A game to zero is not a game at all! Try playing to a higher number."
+}
+else if (inputLimit < 0) {
+  return "You can't play to a negative number! Try a positive number."
+}
+else {
   var numberArray = [];
   //Populate the array.
   for (var i=0; i<inputLimit+1; i++) {
@@ -34,5 +43,5 @@ var createList = function(inputLimit, inputPing, inputPong) {
   }
   //Remove zero and return string.
   numberArray.shift();
-  return numberArray.join(", ");
+  return numberArray.join(", ");}
 }
