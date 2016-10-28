@@ -12,27 +12,34 @@
     <div class="container">
       <div class="row" id="heading">
         <div class="col-md-12">
-
+          <div class="jumbotron">
+            <h2>Ping Pong like you've never seen before!</h2>
+          </div>
         </div>
       </div><!--row heading-->
       <div class="row">
-        <form>
           <div class="col-md-4" id="input">
-            <div class="form-group">
-              <label for="inputLimit">Enter upper limit here:</label>
-              <input id="inputLimit" type="number">
+            <div class="panel panel-default">
+              <form>
+              <div class="form-group">
+                <label for="inputLimit">Play a game to:</label>
+                <input id="inputLimit" type="number">
+              </div>
+              <div class="form-group">
+                <label for="inputPing">How often will you ping?</label>
+                <input id="inputPing" type="number">
+              </div>
+              <div class="form-group">
+                <label for="inputPong">How often will you pong?</label>
+                <input id="inputPong" type="number">
+              </div>
+              <button type="submit">Game, set, match!</button>
+            </form>
             </div>
-            <div class="form-group">
-              <label for="inputPing">Numbers divisible by this number will be replaced with "ping":</label>
-              <input id="inputPing" type="number">
-            </div>
-            <div class="form-group">
-              <label for="inputPong">Numbers divisible by this number will be replaced with "pong":</label>
-              <input id="inputPong" type="number">
-            </div>
-            <button type="submit">Ping it!</button>
+            <h5>Created by Brad Copenhaver.</h5>
+            <h6>October 28, 2016</h6>
+            <img src="img/whiteBall.png" alt="a ping pong ball">
           </div>
-        </form>
         <div class="col-md-8" id="output">
           <p id="outputList"></p>
         </div>

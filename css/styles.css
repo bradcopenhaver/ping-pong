@@ -1,0 +1,13 @@
+#output {
+  display: none;
+}
+.jumbotron {
+  text-align: center;
+}
+#input .panel {
+  padding: 10px;
+  background-color: #71bc86;
+}
+#output p {
+  font-size: 12pt;
+}
