@@ -7,10 +7,16 @@
 #cats {
   display: none;
 }
+#halo {
+  display: none;
+}
+#birthday {
+  display: none;
+}
 #heading {
   text-align: center;
 }
-#heading img {
+#heading {
   height: 100px;
 }
 #input .panel {
